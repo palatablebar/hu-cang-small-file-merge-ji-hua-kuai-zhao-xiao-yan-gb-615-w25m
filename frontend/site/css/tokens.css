@@ -1,0 +1,52 @@
+/* 设计令牌：湖仓冷轧钢 + 铜标。
+   视觉方向：冷灰蓝工程纸（数据厂房）+ 深钢色工作区 + 铜色标尺强调；
+   字体：Space Grotesk（标题/数字）+ IBM Plex Sans SC（正文）+ IBM Plex Mono（manifest 字段）。
+   规则：全部 oklch()；无纯黑纯白；不用紫蓝渐变 / 玻璃拟态。 */
+:root {
+  --paper: oklch(0.958 0.006 240);
+  --paper-2: oklch(0.928 0.01 238);
+  --paper-3: oklch(0.897 0.014 236);
+  --ink: oklch(0.265 0.022 248);
+  --ink-soft: oklch(0.44 0.018 246);
+  --ink-faint: oklch(0.585 0.014 244);
+  --rule: oklch(0.845 0.01 238);
+  --rule-strong: oklch(0.72 0.016 236);
+
+  --steel: oklch(0.245 0.028 252);
+  --steel-2: oklch(0.312 0.026 250);
+  --steel-line: oklch(0.4 0.022 250);
+  --steel-ink: oklch(0.935 0.01 235);
+  --steel-muted: oklch(0.745 0.018 240);
+
+  --accent: oklch(0.556 0.128 48);
+  --accent-soft: oklch(0.66 0.108 54);
+  --accent-wash: oklch(0.932 0.038 62);
+  --accent-bright: oklch(0.79 0.115 56);
+
+  --ok: oklch(0.505 0.078 172);
+  --ok-wash: oklch(0.93 0.028 172);
+  --warn: oklch(0.675 0.115 82);
+  --warn-wash: oklch(0.945 0.035 85);
+  --danger: oklch(0.528 0.145 26);
+  --danger-wash: oklch(0.932 0.038 28);
+  --info: oklch(0.5 0.06 244);
+  --info-wash: oklch(0.932 0.022 244);
+
+  --font-display: 'Space Grotesk', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  --font-body: 'IBM Plex Sans SC', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', ui-monospace, monospace;
+
+  --fs-xs: 0.7rem;
+  --fs-sm: 0.8rem;
+  --fs-md: 0.92rem;
+  --fs-lg: 1.15rem;
+  --fs-xl: clamp(1.45rem, 2vw, 2rem);
+  --fs-2xl: clamp(1.9rem, 3.2vw, 2.9rem);
+
+  --pad: clamp(14px, 1.5vw, 26px);
+  --rail: 232px;
+  --radius: 4px;
+  --radius-lg: 7px;
+  --shadow: 0 1px 0 oklch(0.87 0.01 238), 0 20px 44px -38px oklch(0.3 0.03 250 / 0.6);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
